@@ -1,0 +1,468 @@
+<robot name="hexapod">
+	<link name="Base">
+		<visual>
+			<origin xyz="0 0 0"/>
+			<geometry>
+				<cylinder length="0.2" radius="1.0"/>
+			</geometry>
+			<material name="blue">
+				<color rgba="0 0 0.8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0"/>
+			<geometry>
+				<cylinder length="0.2" radius="1.0"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="250"/>
+			<inertia ixx="63.33" ixy="0.0" ixz="0.0" iyy="63.33" iyz="0.0" izz="125"/>
+		</inertial>
+	</link>
+	
+	<link name="Leg1">
+		<visual>
+		<origin xyz="1 0 0.5"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+			<material name="red">
+				<color rgba="0.8 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+		<origin xyz="1 0 0.5"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Leg2">
+		<visual>
+			<origin xyz="0.5 0.866 0.5" rpy="0 0 0"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+			<material name="red">
+				<color rgba="0.8 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.5 0.866 0.5" rpy="0 0 0"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Leg3">
+		<visual>
+			<origin xyz="-0.5 0.866 0.5" rpy="0 0 0"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+			<material name="red">
+				<color rgba="0.8 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.5 0.866 0.5" rpy="0 0 0"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Leg4">
+		<visual>
+			<origin xyz="-1 0 0.5" rpy="0 0 0"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+			<material name="red">
+				<color rgba="0.8 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-1 0 0.5" rpy="0 0 0"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Leg5">
+		<visual>
+			<origin xyz="-0.5 -0.866 0.5" rpy="0 0 0"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+			<material name="red">
+				<color rgba="0.8 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.5 -0.866 0.5" rpy="0 0 0"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Leg6">
+		<visual>
+			<origin xyz="0.5 -0.866 0.5" rpy="0 0 0"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+			<material name="red">
+				<color rgba="0.8 0 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.5 -0.866 0.5" rpy="0 0 0"/>
+			<geometry>
+				<sphere radius="0.1"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+	
+	<link name="Leg1b">
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Leg2b">
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+	
+	<link name="Leg3b">
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+	
+	<link name="Leg4b">
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+	
+	<link name="Leg5b">
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+	
+	<link name="Leg6b">
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Foot1">
+		<visual>
+			<origin xyz="0.5 0 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+			<material name="yellow">
+				<color rgba="0.8 0.5 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.5 0 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Foot2">
+		<visual>
+			<origin xyz="0.25 0.43 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+			<material name="yellow">
+				<color rgba="0.8 0.5 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.25 0.43 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Foot3">
+		<visual>
+			<origin xyz="0.25 0-.43 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+			<material name="yellow">
+				<color rgba="0.8 0.5 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.25 -0.43 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Foot4">
+		<visual>
+			<origin xyz="-0.5 0 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+			<material name="yellow">
+				<color rgba="0.8 0.5 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+
+	<link name="Foot5">
+		<visual>
+			<origin xyz="-0.25 -0.43 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+			<material name="yellow">
+				<color rgba="0.8 0.5 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.25 -0.43 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+	
+	<link name="Foot6">
+		<visual>
+			<origin xyz="0.25 -0.43 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+			<material name="yellow">
+				<color rgba="0.8 0.5 0 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.25 -0.43 -2"/>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+		</inertial>
+	</link>
+	
+	<joint name="Root1" type="revolute">
+		<parent link="Base"/>
+		<child link="Leg1"/>
+		<origin xyz="1 0 0" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+	
+	<joint name="Root2" type="revolute">
+		<parent link="Base"/>
+		<child link="Leg2"/>
+		<origin xyz="0.5 0.866 0" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="Root3" type="revolute">
+		<parent link="Base"/>
+		<child link="Leg3"/>
+		<origin xyz="-0.5 0.866 0" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="Root4" type="revolute">
+		<parent link="Base"/>
+		<child link="Leg4"/>
+		<origin xyz="-1 0 0" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="Root5" type="revolute">
+		<parent link="Base"/>
+		<child link="Leg5"/>
+		<origin xyz="-0.5 -0.866 0" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="Root6" type="revolute">
+		<parent link="Base"/>
+		<child link="Leg6"/>
+		<origin xyz="0.5 -0.866 0" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+	
+	<joint name="RootV1" type="revolute">
+		<parent link="Leg1"/>
+		<child link="Leg1b"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+	
+	<joint name="RootV2" type="revolute">
+		<parent link="Leg2"/>
+		<child link="Leg2b"/>
+		<axis xyz="-0.866 0.5 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="RootV3" type="revolute">
+		<parent link="Leg3"/>
+		<child link="Leg3b"/>
+		<axis xyz="-0.866 -0.5 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="RootV4" type="revolute">
+		<parent link="Leg4"/>
+		<child link="Leg4b"/>
+		<axis xyz="0 -1 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="RootV5" type="revolute">
+		<parent link="Leg5"/>
+		<child link="Leg5b"/>
+		<axis xyz="0.866 -0.5 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+	
+	<joint name="RootV6" type="revolute">
+		<parent link="Leg6"/>
+		<child link="Leg6b"/>
+		<axis xyz="0.866 0.5 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+		
+	<joint name="Knee1" type="revolute">
+		<parent link="Leg1b"/>
+		<child link="Foot1"/>
+		<origin xyz="1 0 1" rpy="0 0 0"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+	
+	<joint name="Knee2" type="revolute">
+		<parent link="Leg2b"/>
+		<child link="Foot2"/>
+		<origin xyz="0.5 0.866 1" rpy="0 0 0"/>
+		<axis xyz="-0.866 0.5 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="Knee3" type="revolute">
+		<parent link="Leg3b"/>
+		<child link="Foot3"/>
+		<origin xyz="-0.5 0.866 1" rpy="0 0 0"/>
+		<axis xyz="-0.866 -0.5 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="Knee4" type="revolute">
+		<parent link="Leg4b"/>
+		<child link="Foot4"/>
+		<origin xyz="-1 0 1" rpy="0 0 0"/>
+		<axis xyz="0 -1 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="Knee5" type="revolute">
+		<parent link="Leg5b"/>
+		<child link="Foot5"/>
+		<origin xyz="-0.5 -0.866 1" rpy="0 0 0"/>
+		<axis xyz="0.866 -0.5 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+
+	<joint name="Knee6" type="revolute">
+		<parent link="Leg6b"/>
+		<child link="Foot6"/>
+		<origin xyz="0.5 -0.866 1" rpy="0 0 0"/>
+		<axis xyz="0.866 0.5 0"/>
+		<limit effort="100.0" lower="-0.5" upper="0.5" velocity="1.0"/>
+	</joint>
+	
+</robot>

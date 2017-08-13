@@ -1,0 +1,21 @@
+<robot name="Sphere">
+	<link name="Base">
+		<visual>
+			<geometry>
+				<sphere radius="4"/>
+			</geometry>
+			<material name="orange">
+				<color rgba="0.8 0.3 0.2 1"/>
+			</material>
+		</visual>
+			<collision>
+				<geometry>
+					<sphere radius="4"/>
+				</geometry>
+			</collision>
+		<inertial>
+			<mass value="100.0"/>
+			<inertia ixx="2100" ixy="0" ixz="0" iyy="2100" iyz="0" izz="2100"/>
+		</inertial>
+	</link>
+</robot>

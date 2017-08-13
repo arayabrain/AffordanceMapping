@@ -1,0 +1,263 @@
+<robot name="arm">
+	<link name="Base">
+		<visual>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.2"/>
+			</geometry>
+			<material name="blue">
+				<color rgba="0.2 0.2 0.8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.5"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<link name="Segment1">
+		<visual>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.2"/>
+			</geometry>
+			<material name="blue">
+				<color rgba="0.2 0.2 0.8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.5"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<link name="Segment2">
+		<visual>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.2"/>
+			</geometry>
+			<material name="blue">
+				<color rgba="0.2 0.2 0.8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.5"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<link name="Segment3">
+		<visual>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.2"/>
+			</geometry>
+			<material name="blue">
+				<color rgba="0.2 0.2 0.8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.5"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<link name="Segment4">
+		<visual>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.2"/>
+			</geometry>
+			<material name="blue">
+				<color rgba="0.2 0.2 0.8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.5"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<link name="Segment5">
+		<visual>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.2"/>
+			</geometry>
+			<material name="blue">
+				<color rgba="0.2 0.2 0.8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.5"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<link name="Segment6">
+		<visual>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.2"/>
+			</geometry>
+			<material name="blue">
+				<color rgba="0.2 0.2 0.8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.5"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<link name="Segment7">
+		<visual>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.2"/>
+			</geometry>
+			<material name="blue">
+				<color rgba="0.2 0.2 0.8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.5"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<link name="Segment8">
+		<visual>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<sphere radius="0.5"/>
+			</geometry>
+			<material name="tipcolor">
+				<color rgba="0.1 0.4 0.1 1"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0.5"/>
+			<geometry>
+				<cylinder length="1.0" radius="0.5"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<joint name="Pivot1" type="revolute">
+		<parent link="Base"/>
+		<child link="Segment1"/>
+		<origin xyz="0 0 1" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100.0" lower="-1" upper="1" velocity="1.0"/>
+	</joint>
+	
+	<joint name="Pivot2" type="revolute">
+		<parent link="Segment1"/>
+		<child link="Segment2"/>
+		<origin xyz="0 0 1" rpy="0 0 0"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="100.0" lower="-1" upper="1" velocity="1.0"/>
+	</joint>
+	
+	<joint name="Pivot3" type="revolute">
+		<parent link="Segment2"/>
+		<child link="Segment3"/>
+		<origin xyz="0 0 1" rpy="0 0 0"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="100.0" lower="-1" upper="1" velocity="1.0"/>
+	</joint>
+
+	<joint name="Pivot4" type="revolute">
+		<parent link="Segment3"/>
+		<child link="Segment4"/>
+		<origin xyz="0 0 1" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100.0" lower="-1" upper="1" velocity="1.0"/>
+	</joint>
+
+	<joint name="Pivot5" type="revolute">
+		<parent link="Segment4"/>
+		<child link="Segment5"/>
+		<origin xyz="0 0 1" rpy="0 0 0"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="100.0" lower="-1" upper="1" velocity="1.0"/>
+	</joint>
+
+	<joint name="Pivot6" type="revolute">
+		<parent link="Segment5"/>
+		<child link="Segment6"/>
+		<origin xyz="0 0 1" rpy="0 0 0"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="100.0" lower="-1" upper="1" velocity="1.0"/>
+	</joint>
+
+	<joint name="Pivot7" type="revolute">
+		<parent link="Segment6"/>
+		<child link="Segment7"/>
+		<origin xyz="0 0 1" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="100.0" lower="-1" upper="1" velocity="1.0"/>
+	</joint>
+
+	<joint name="Pivot8" type="revolute">
+		<parent link="Segment7"/>
+		<child link="Segment8"/>
+		<origin xyz="0 0 1" rpy="0 0 0"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="100.0" lower="-1" upper="1" velocity="1.0"/>
+	</joint>
+</robot>
