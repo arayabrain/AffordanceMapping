@@ -12,10 +12,11 @@ This code trains a model to control an 8 DoF armature in the presence of obstacl
 environment. The model sees these obstacles via an overhead depth camera. The model learns
 to map the set of reachable points with an approximately uniform control grid.
 
+![Reacher](https://github.com/arayabrain/AffordanceMapping/blob/master/reacher.png "Reacher geometry")
 
 ## Hexapod
 
 This code trains a model to control the locomotion of a hexapod robot. The model can direct
 the robot to walk or run towards points in the plane.
 
-![Hexapod walking gait](hexa.gif "Hexapod walking gait")
+![Hexapod walking gait](https://github.com/arayabrain/AffordanceMapping/blob/master/hexapod.gif "Hexapod walking gait")
